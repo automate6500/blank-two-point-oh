@@ -8,11 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: check out the code
-      uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
+    - uses: actions/checkout@v1
+    - run: echo Hello, world!
+    - run: |
         echo Add other actions to build,
         echo test, and deploy your project.
